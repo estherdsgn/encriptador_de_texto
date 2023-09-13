@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Desbloqueando el desafío: Challenge ONE Principiante en programación Sprint 01: Construye un encriptador de texto con Javascript "
+    />
+    <meta
+      name="author"
+      content="NOEMI ESTHER HUANCA MAMANI"
+      href="#"
+    />
+    <title>Alura | Challenge 1</title>
+    <link rel="shortcut icon" href="image/icono.ico" type="image/x-icon" />
+
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site__header">
+      <img
+        class="image__header"
+        src="image/Vector.png"
+        alt="Logo de Alura Latam"
+      />
+    </header>
+
+    <main class="container">
+      <section class="section__cipher">
+        <textarea
+          id="content__cipher"
+          class="content__cipher"
+          placeholder="Ingrese el texto aqui"
+          autofocus
+          required
+        ></textarea>
+
+        <span class="description__cipher"
+          >Solo letras minúsculas y sin acentos</span
+        >
+
+        <div class="cipher__button">
+          <button class="btn__encrypt" id="btn__encrypt">Encriptar</button>
+
+          <button class="btn__decrypt" id="btn__decrypt">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="section__view">
+        <textarea id="content__view" class="content__view" readonly></textarea>
+
+        <div id="description__content" class="description__content">
+          <p>Ningún mensaje fue encontrado</p>
+          <p>Ingresa el texto que desea encriptar o desencriptar.</p>
+        </div>
+
+        <button id="btn__copy" class="btn__copy">Copiar</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
